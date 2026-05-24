@@ -49,12 +49,12 @@
 	max-width: 500px;
 	padding: 1.5rem;
 	border-radius: 12px;
-	background-color: var(--color-bg);
-	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+	background: linear-gradient(145deg, #f8f3eb, #fdfaf6);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 	text-decoration: none;
 	color: var(--color-text);
-	transform: scale(1);
-	transition: transform 0.4s ease, box-shadow 0.4s ease;
+	transform: translateY(0);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carousel-card,
@@ -63,17 +63,9 @@
 }
 
 .carousel-card:hover {
-	transform: scale(1.03);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-	border: none;
+	transform: translateY(-4px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
-
-.carousel-card,
-.carousel-card:hover,
-.carousel-card *:hover {
-	text-decoration: none;
-}
-
 
 /* --- Product Image --- */
 .carousel-image {
@@ -82,12 +74,13 @@
 	object-fit: cover;
 	border-radius: 50%;
 	flex-shrink: 0;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	transition: transform 0.4s ease;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .carousel-card:hover .carousel-image {
-	transform: scale(1.05);
+	transform: scale(1.07);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 /* --- Product Info --- */
@@ -116,7 +109,7 @@
 	align-self: flex-start;
 	background-color: var(--color-bg-dark);
 	color: var(--color-cta-text);
-	padding: var(--space-3) var(--space-5);
+	padding: 0.8rem 1.6rem;
 	border: 2px solid transparent;
 	border-radius: 8px;
 	font-weight: 600;
@@ -127,13 +120,14 @@
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	letter-spacing: 0.3px;
 }
 
 .carousel-buy:hover {
-	background-color: var(--color-bg);
-	color: var(--color-bg-dark);
+	background-color: var(--color-accent);
+	color: var(--color-bg);
 	border-color: var(--color-accent);
-	transform: translateY(-1px);
+	transform: translateY(-2px);
 }
 
 /* --- Carousel Buttons --- */

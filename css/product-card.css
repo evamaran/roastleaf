@@ -1,29 +1,29 @@
-/* --- Product card --- */
 .product-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	background: rgba(255, 255, 255, 0.6);
-	backdrop-filter: blur(6px);
-	border: 1px solid rgba(212, 178, 106, 0.35);
+	background: linear-gradient(145deg, var(--color-bg), #fdfaf6);
+	border: 1px solid rgba(212, 178, 106, 0.45);
 	border-radius: 14px;
-	padding: 1.2rem;
+	padding: 1.4rem;
 	text-decoration: none;
 	color: inherit;
-	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+	transform: scale(1);
+	transform-origin: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 	min-height: 260px;
 }
 
 .product-card:hover {
-	transform: none;
-	border-color: rgba(212, 178, 106, 0.55);
-	box-shadow: 0 0 0 3px rgba(212, 178, 106, 0.25), 0 8px 20px rgba(0, 0, 0, 0.12);
-	background-color: transparent;
+	transform: scale(1.04);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+	border-color: rgba(212, 178, 106, 0.75);
+	background: linear-gradient(145deg, var(--color-bg), #fffdf9);
 }
 
-/* --- Product image --- */
 .product-image {
 	width: 120px;
 	height: 120px;
@@ -32,6 +32,12 @@
 	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 	border: 2px solid rgba(212, 178, 106, 0.35);
 	margin-bottom: 0.8rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover .product-image {
+	transform: scale(1.07);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
 }
 
 .product-image,
@@ -44,10 +50,10 @@
 	border-radius: 50% !important;
 	object-fit: cover !important;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-
-/* --- Product info --- */
 .product-info {
 	flex-grow: 1;
 	display: flex;
@@ -58,7 +64,6 @@
 	text-align: center;
 }
 
-/* --- Product title (mobile first) --- */
 .product-card h3.product-title {
 	font-size: 0.85rem;
 	line-height: 1.25;
@@ -77,15 +82,13 @@
 	margin-right: auto !important;
 }
 
-
-/* --- Product price --- */
 .product-price {
 	font-size: 0.9rem;
 	font-weight: 600;
 	margin-top: auto;
 	text-align: center;
 	opacity: 0.9;
-	color: var(--color-text-light);
+	color: var(--color-bg-dark);
 }
 
 .product-card .product-info,
@@ -96,7 +99,6 @@
 	margin-right: auto;
 }
 
-/* --- Tablet --- */
 @media (min-width: 600px) {
 	.product-image {
 		width: 135px;
@@ -110,13 +112,17 @@
 	.product-price {
 		font-size: 1rem;
 	}
+
+	.product-card {
+		min-height: 300px;
+		padding: 1.6rem;
+	}
 }
 
-/* --- Desktop --- */
 @media (min-width: 1024px) {
 	.product-card {
-		padding: 1.6rem;
-		min-height: 300px;
+		padding: 1.8rem;
+		min-height: 320px;
 	}
 
 	.product-image {

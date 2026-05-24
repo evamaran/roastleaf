@@ -133,9 +133,6 @@ function handlePayment() {
 	window.location.href = "confirmation.html";
 }
 
-// run summary on page load
-renderOrderSummary();
-
 // listen for pay button
 document.addEventListener("click", (e) => {
 	if (e.target.id === "pay-now") {
