@@ -82,7 +82,8 @@
 	gap: 1.5rem;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
-	margin:auto;
+	justify-content: center;
+	margin: auto;
 }
 
 /* --- Product card --- */
@@ -170,6 +171,7 @@
 	.product-grid {
 		grid-template-columns: repeat(4, 1fr);
 		grid-column: 3 / 11;
+		justify-content: stretch;
 	}
 
 	.product-section {

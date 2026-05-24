@@ -1,7 +1,7 @@
 .hero {
 	position: relative;
 	display: block;
-	height: 45vh;
+	min-height: 45vh;
 	overflow: hidden;
 	background-color: #F4EDE2;
 	margin-top: 1rem;
@@ -20,7 +20,7 @@
 
 .hero-content {
 	position: relative;
-	padding: 2rem 1.5rem;
+	padding: 1.8rem 1.5rem;
 	max-width: 90%;
 	display: flex;
 	flex-direction: column;
@@ -45,15 +45,19 @@
 	padding: 0.8rem 1.6rem;
 	border-radius: 4px;
 	font-weight: 600;
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
 @media (min-width: 600px) {
+	.hero {
+		min-height: 50vh;
+	}
+
 	.hero-content {
 		position: absolute;
 		top: 3rem;
-		right: 4rem;
-		max-width: 75%;
+		right: 3rem;
+		max-width: 70%;
 		align-items: flex-end;
 		text-align: right;
 	}
@@ -64,7 +68,7 @@
 	}
 
 	.hero-cta {
-		margin-top: 2rem;
+		margin-top: 1.8rem;
 		text-decoration: none;
 	}
 
@@ -75,13 +79,12 @@
 	}
 }
 
-
 @media (min-width: 1024px) {
 	.hero {
 		grid-column: 1 / 13;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		height: 40vh;
+		min-height: 40vh;
 	}
 
 	.hero-image {
@@ -90,7 +93,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 140%;
+		height: 130%;
 		object-fit: cover;
 		object-position: left bottom;
 		z-index: 0;
@@ -100,7 +103,7 @@
 		grid-column: 3 / 10;
 		position: absolute;
 		top: 4rem;
-		right: -4rem;
+		right: -3rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -117,7 +120,7 @@
 	.hero-cta {
 		padding: 1rem 2rem;
 		font-size: 1.125rem;
-		margin-top: 2rem;
+		margin-top: 1.8rem;
 		align-self: flex-end;
 		text-decoration: none;
 	}
