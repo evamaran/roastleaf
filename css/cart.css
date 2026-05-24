@@ -236,7 +236,7 @@
 
 	.cart-item {
 		display: grid;
-		grid-template-columns: 110px 1fr auto;
+		grid-template-columns: 150px 1fr auto;
 		column-gap: 1.5rem;
 		row-gap: 1rem;
 		align-items: center;
