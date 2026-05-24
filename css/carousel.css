@@ -1,15 +1,13 @@
-/* --- Carousel Section --- */
 .carousel-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 3rem auto;
+	margin: 1.5rem auto;
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
 }
 
-/* --- Carousel Container --- */
 .carousel-container {
 	position: relative;
 	overflow: hidden;
@@ -17,21 +15,19 @@
 	max-width: 600px;
 	border-radius: 12px;
 	background-color: transparent;
-	padding: 1.5rem;
+	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: none;
 }
 
-/* --- Carousel Track --- */
 .carousel-track {
 	display: flex;
 	transition: transform 0.4s ease;
 	width: 100%;
 }
 
-/* --- Carousel Item --- */
 .carousel-item {
 	flex: 0 0 100%;
 	display: flex;
@@ -40,14 +36,14 @@
 	box-sizing: border-box;
 }
 
-/* --- Carousel Card --- */
 .carousel-card {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	gap: 1.5rem;
+	gap: 1rem;
 	width: 100%;
-	max-width: 500px;
-	padding: 1.5rem;
+	max-width: 320px;
+	padding: 1.2rem;
 	border-radius: 12px;
 	background: linear-gradient(145deg, #f8f3eb, #fdfaf6);
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -55,6 +51,7 @@
 	color: var(--color-text);
 	transform: translateY(0);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
 }
 
 .carousel-card,
@@ -72,7 +69,6 @@
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* --- Product Image --- */
 .carousel-image {
 	width: 140px;
 	height: 140px;
@@ -88,13 +84,13 @@
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Product Info --- */
 .carousel-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 0.4rem;
-	text-align: left;
+	align-items: center;
+	text-align: center;
 }
 
 .carousel-description {
@@ -109,9 +105,8 @@
 	margin-top: 0.3rem;
 }
 
-/* --- Buy Now Button --- */
 .carousel-buy {
-	align-self: flex-start;
+	align-self: center;
 	background-color: var(--color-bg-dark);
 	color: var(--color-cta-text);
 	padding: 0.8rem 1.6rem;
@@ -135,7 +130,6 @@
 	transform: translateY(-2px);
 }
 
-/* --- Carousel Buttons --- */
 .carousel-btn {
 	position: absolute;
 	top: 50%;
@@ -144,8 +138,8 @@
 	color: var(--color-cta-text);
 	border: 2px solid transparent;
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 44px;
+	height: 44px;
 	cursor: pointer;
 	z-index: 2;
 	display: flex;
@@ -162,11 +156,11 @@
 }
 
 .carousel-btn.left {
-	left: 3rem;
+	left: 1rem;
 }
 
 .carousel-btn.right {
-	right: 3rem;
+	right: 1rem;
 }
 
 .carousel-btn::before {
@@ -186,7 +180,6 @@
 	transform: rotate(-45deg);
 }
 
-/* --- Carousel Dots --- */
 .carousel-dots {
 	position: absolute;
 	bottom: 0rem;
@@ -210,20 +203,22 @@
 	background-color: var(--color-accent);
 }
 
-/* --- Responsive --- */
-@media (max-width: 768px) {
+/* --- Tablet --- */
+@media (min-width: 600px) {
 	.carousel-card {
-		flex-direction: column;
+		max-width: 500px;
+		flex-direction: row;
+		text-align: left;
 		align-items: center;
-		text-align: center;
 	}
 
 	.carousel-info {
-		align-items: center;
+		align-items: flex-start;
+		text-align: left;
 	}
 
 	.carousel-buy {
-		align-self: center;
+		align-self: flex-start;
 	}
 }
 
@@ -231,6 +226,7 @@
 @media (min-width: 1024px) {
 	.carousel-section {
 		max-width: 1000px;
+		margin: 3rem auto;
 	}
 
 	.carousel-container {
@@ -239,9 +235,19 @@
 
 	.carousel-card {
 		max-width: 650px;
+		padding: 1.5rem;
+		gap: 1.5rem;
 	}
 
 	.carousel-buy {
 		margin-left: auto;
+	}
+
+	.carousel-btn.left {
+		left: 3rem;
+	}
+
+	.carousel-btn.right {
+		right: 3rem;
 	}
 }
