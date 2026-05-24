@@ -123,16 +123,13 @@ a:hover {
 	margin: 3rem 0 2rem;
 }
 
-/* --- Breadcrumbs layout --- */
+/* --- Breadcrumbs (mobile-first) --- */
 .breadcrumbs-container {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	padding: 0 var(--space-4);
-	max-width: var(--max-width);
+	width: 100%;
+	padding: 0 var(--space-3);
 	margin: 0 auto;
 }
 
-/* --- Breadcrumbs (mobile-first with truncation) --- */
 .breadcrumbs {
 	font-family: "Open Sans", sans-serif;
 	font-size: 0.9rem;
@@ -141,17 +138,15 @@ a:hover {
 	align-items: center;
 	gap: 0.3rem;
 	padding: 1rem 0;
-	grid-column: 3 / 11;
-
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 100%;
+	text-align: left;
 }
 
 .breadcrumbs a {
 	color: var(--color-text-light);
-	text-decoration: none;
 	transition: color 0.2s ease;
 }
 
@@ -181,11 +176,9 @@ a:hover {
 	font-weight: 600;
 	cursor: pointer;
 	transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
-	text-align: center;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	text-decoration: none;
 }
 
 .btn:hover {
@@ -242,12 +235,10 @@ a:hover {
 	transition: opacity 0.4s ease, transform 0.4s ease;
 	z-index: 9999;
 	max-width: 280px;
-	max-height: 6rem;
 	min-height: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	line-height: 1.5rem;
 	text-align: center;
 }
 
@@ -293,7 +284,7 @@ a:hover {
 	display: none !important;
 }
 
-/* --- Tablet layout --- */
+/* --- Tablet layout (follows mobile) --- */
 @media (min-width: 600px) {
 	h1 {
 		font-size: 2.5rem;
@@ -330,7 +321,7 @@ a:hover {
 	}
 }
 
-/* --- Desktop layout --- */
+/* --- Desktop layout (12-column grid) --- */
 @media (min-width: 1024px) {
 	h1 {
 		font-size: 3.25rem;
@@ -370,6 +361,12 @@ a:hover {
 		max-width: 100%;
 	}
 
+	.breadcrumbs {
+		grid-column: 3 / 11;
+		padding: 2rem 0;
+		font-size: 1rem;
+	}
+
 	.page-container {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
@@ -402,12 +399,6 @@ a:hover {
 
 	.full {
 		grid-column: 1 / 13;
-	}
-
-	.breadcrumbs {
-		grid-column: 3 / 11;
-		padding: 2rem 0;
-		font-size: 1rem;
 	}
 
 	.categories {
