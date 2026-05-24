@@ -222,4 +222,13 @@
 		width: 140px;
 		height: 140px;
 	}
+
+	.product-detail .product-image-container img {
+		width: 420px !important;
+		height: 420px !important;
+		object-fit: cover;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto 0.6rem;
+	}
 }
