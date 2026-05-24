@@ -98,6 +98,8 @@
 	align-items: center;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	width: 100%;
+	max-width: 260px;
 }
 
 .product-card,
@@ -153,6 +155,10 @@
 	.product-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	.product-card {
+		max-width: 280px;
+	}
 }
 
 /* --- Desktop --- */
@@ -172,6 +178,10 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-column: 3 / 11;
 		justify-content: stretch;
+	}
+
+	.product-card {
+		max-width: 300px;
 	}
 
 	.product-section {
