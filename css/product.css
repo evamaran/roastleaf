@@ -224,8 +224,8 @@
 	}
 
 	.product-detail .product-image-container img {
-		width: 420px !important;
-		height: 420px !important;
+		width: 400px !important;
+		height: 400px !important;
 		object-fit: cover;
 		border-radius: 50%;
 		display: block;
