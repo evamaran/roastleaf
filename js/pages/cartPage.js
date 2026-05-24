@@ -9,7 +9,7 @@ let productsData = [];
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // load products
-fetch("../data/products.json")
+fetch("/roastleaf/data/products.json")
 	.then(res => {
 		if (!res.ok) throw new Error("Failed to load products file");
 		return res.json();
