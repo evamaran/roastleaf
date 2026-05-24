@@ -3,18 +3,13 @@ const baseUrl = "https://v2.api.noroff.dev/auth";
 
 // Register new user
 export async function registerUser(userData) {
-	console.log("📨 Sending to API:", userData);
-
 	const response = await fetch(`${baseUrl}/register`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(userData),
 	});
 
-	console.log("📥 Response status:", response.status);
-
 	const data = await response.json();
-	console.log("📥 Response body:", data);
 
 	if (!response.ok) {
 		throw new Error(data.errors?.[0]?.message || "Registration failed");
@@ -22,7 +17,6 @@ export async function registerUser(userData) {
 
 	return data;
 }
-
 
 // Log in user
 export async function loginUser(credentials) {

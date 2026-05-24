@@ -4,7 +4,7 @@ const cart = JSON.parse(localStorage.getItem("cart")) || [];
 // load products to match cart items
 let productsData = [];
 
-fetch("../data/products.json")
+fetch("./data/products.json")
 	.then(res => res.json())
 	.then(products => {
 		productsData = products;
