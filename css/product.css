@@ -184,10 +184,7 @@
 		margin-bottom: 0.6rem;
 	}
 
-	.product-image-container {
-		grid-column: 2 / 6;
-		text-align: center;
-	}
+
 
 	.product-image-container img {
 		width: 420px;
@@ -198,6 +195,10 @@
 		display: block;
 	}
 
+	.product-image-container {
+		display: flex;
+		justify-content: center;
+	}
 
 	.product-info {
 		grid-column: 7 / 12;
