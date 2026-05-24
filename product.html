@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Product | Roast & Leaf</title>
+	<meta name="description" content="Discover artisan coffee and tea blends with detailed origins and tasting notes.">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+	<header id="header"></header>
+
+	<div class="breadcrumbs-container">
+		<nav class="breadcrumbs">
+			<a href="index.html">Home</a>
+			<span class="divider">></span>
+			<a href="categories.html">Categories</a>
+			<span class="divider">></span>
+			<a href="categories.html#coffee">Coffee</a>
+			<span class="divider">></span>
+			<span class="current" id="breadcrumb-product"></span>
+		</nav>
+	</div>
+
+	<section class="product-detail">
+		<h1 id="product-title" class="product-title"></h1>
+
+		<div class="product-image-container">
+			<img id="product-image" src="" alt="" class="product-image">
+		</div>
+
+		<div class="product-info">
+			<h3 id="product-short"></h3>
+			<p id="product-long"></p>
+			<p class="product-price" id="product-price"></p>
+
+			<ul class="product-specs">
+				<li><strong>Weight:</strong> <span id="product-weight"></span></li>
+				<li><strong>Origin:</strong> <span id="product-origin"></span></li>
+				<li><strong>Roast level:</strong> <span id="product-roast"></span></li>
+				<li><strong>Brew methods:</strong> <span id="product-brew"></span></li>
+			</ul>
+
+			<button id="add-to-cart" class="btn">Add to Cart</button>
+		</div>
+	</section>
+
+	<section class="related-products">
+		<h2>Related Products</h2>
+		<div class="related-grid" id="related-grid"></div>
+	</section>
+
+	<div id="footer"></div>
+
+	<script type="module" src="js/utils/main.js"></script>
+	<script type="module" src="js/pages/productPage.js?v=2"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* --- Product detail layout --- */
+.product-detail {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	gap: 1.5rem;
+}
+
+/* --- Product title --- */
+.product-title {
+	font-family: "Playfair Display", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 0.3rem;
+	margin-bottom: 0.8rem;
+	color: var(--color-text);
+}
+
+/* --- Product subtitle --- */
+.product-subtitle {
+	font-family: "Playfair Display", serif;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--color-text);
+	text-align: left;
+	margin-bottom: 0.6rem;
+}
+
+/* --- Product image --- */
+.product-image-container img {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 0.8rem;
+}
+
+/* --- Product info section --- */
+.product-info {
+	text-align: left;
+	margin-top: 0.8rem;
+}
+
+/* --- Product description --- */
+.product-info p {
+	margin-bottom: 0.8rem;
+}
+
+/* --- Product price --- */
+.product-price {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-top: 0.6rem;
+	color: var(--color-text);
+	text-align: left;
+}
+
+/* --- Product specifications --- */
+.product-specs {
+	list-style: none;
+	padding: 0;
+	margin-top: 0.8rem;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	color: var(--color-text-light);
+	text-align: left;
+}
+
+.product-specs li {
+	margin-bottom: 0.3rem;
+}
+
+/* --- Add to cart button (layout only) --- */
+#add-to-cart {
+	padding: 0.8rem 1.6rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 0.95rem;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 1rem;
+	align-self: flex-start;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* --- Related products section --- */
+.related-products {
+	max-width: 600px;
+	margin: 2.5rem auto 0;
+	padding: 0 1rem;
+}
+
+.related-products h2 {
+	font-family: "Playfair Display", serif;
+	font-size: 1.5rem;
+	margin: 1.2rem 0 1rem;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: var(--color-text);
+}
+
+/* --- Related products grid --- */
+.related-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 1.2rem;
+}
+
+/* --- Related product card --- */
+.related-card {
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid var(--color-border);
+	border-radius: 8px;
+	padding: 1rem;
+	text-align: center;
+	background-color: var(--color-bg);
+	transition: transform 0.2s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.related-card,
+.related-card:hover,
+.related-card *:hover {
+	text-decoration: none;
+}
+
+.related-card:hover {
+	transform: scale(1.03);
+}
+
+/* --- Related product image --- */
+.related-image {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 0.5rem;
+}
+
+/* --- Related product title --- */
+.related-title {
+	font-family: "Playfair Display", serif;
+	font-size: 1rem;
+	margin: 0.5rem 0;
+	color: var(--color-text);
+}
+
+/* --- Related product price --- */
+.related-price {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 0.9rem;
+	color: var(--color-text-light);
+}
+
+/* --- Desktop layout --- */
+@media (min-width: 1024px) {
+	.product-detail {
+		max-width: 1500px;
+		padding: 2.5rem 5%;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 2.5rem;
+		text-align: left;
+		align-items: start;
+	}
+
+	.product-title {
+		grid-column: 2 / 12;
+		text-align: left;
+		margin-top: 0.2rem;
+		margin-bottom: 0.6rem;
+	}
+
+	.product-image-container {
+		grid-column: 2 / 6;
+		text-align: center;
+	}
+
+	.product-image-container img {
+		width: 100%;
+		height: 360px;
+		object-fit: cover;
+		margin-bottom: 0.6rem;
+	}
+
+	.product-info {
+		grid-column: 7 / 12;
+		margin-top: 0.6rem;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.product-subtitle,
+	.product-price,
+	.product-specs,
+	#add-to-cart {
+		align-self: flex-start;
+		text-align: left;
+	}
+
+	.product-subtitle {
+		font-size: 1.15rem;
+		margin-bottom: 0.5rem;
+	}
+
+	#add-to-cart {
+		width: 220px;
+		margin-top: 0.8rem;
+	}
+
+	.related-products {
+		max-width: 1500px;
+		padding: 0 5%;
+		margin-top: 3rem;
+	}
+
+	.related-grid {
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.related-image {
+		width: 140px;
+		height: 140px;
+	}
+}

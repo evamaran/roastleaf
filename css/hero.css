@@ -1,0 +1,124 @@
+.hero {
+	position: relative;
+	display: block;
+	height: 45vh;
+	overflow: hidden;
+	background-color: #F4EDE2;
+	margin-top: 1rem;
+}
+
+.hero-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	object-fit: cover;
+	object-position: center 65%;
+	z-index: 0;
+}
+
+.hero-content {
+	position: relative;
+	padding: 2rem 1.5rem;
+	max-width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	gap: 0.75rem;
+	z-index: 2;
+}
+
+.hero-line {
+	color: var(--color-cta-text);
+	font-family: "Playfair Display", serif;
+	font-weight: 500;
+	font-size: 1.35rem;
+	line-height: 1.35;
+	letter-spacing: 0.5px;
+	margin: 0;
+	text-shadow: 0 1px 3px rgba(244, 237, 226, 0.25);
+}
+
+.hero-cta {
+	padding: 0.8rem 1.6rem;
+	border-radius: 4px;
+	font-weight: 600;
+	margin-top: 4rem;
+}
+
+@media (min-width: 600px) {
+	.hero-content {
+		position: absolute;
+		top: 3rem;
+		right: 4rem;
+		max-width: 75%;
+		align-items: flex-end;
+		text-align: right;
+	}
+
+	.hero-line {
+		font-size: 1.8rem;
+		letter-spacing: 0.6px;
+	}
+
+	.hero-cta {
+		margin-top: 2rem;
+		text-decoration: none;
+	}
+
+	.hero-image {
+		height: 100%;
+		object-fit: cover;
+		object-position: left 85%;
+	}
+}
+
+
+@media (min-width: 1024px) {
+	.hero {
+		grid-column: 1 / 13;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		height: 40vh;
+	}
+
+	.hero-image {
+		grid-column: 1 / 13;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 140%;
+		object-fit: cover;
+		object-position: left bottom;
+		z-index: 0;
+	}
+
+	.hero-content {
+		grid-column: 3 / 10;
+		position: absolute;
+		top: 4rem;
+		right: -4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+		gap: 1.5rem;
+	}
+
+	.hero-line {
+		font-size: 2.2rem;
+		letter-spacing: 0.75px;
+		text-shadow: 0 1px 3px rgba(244, 237, 226, 0.25);
+	}
+
+	.hero-cta {
+		padding: 1rem 2rem;
+		font-size: 1.125rem;
+		margin-top: 2rem;
+		align-self: flex-end;
+		text-decoration: none;
+	}
+}

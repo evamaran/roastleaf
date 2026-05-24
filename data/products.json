@@ -1,0 +1,496 @@
+[
+	{
+		"id": "c1",
+		"title": "Blended Espresso",
+		"shortDescription": "A balanced espresso blend with smooth sweetness and gentle acidity.",
+		"longDescription": "This balanced espresso blend brings together high-altitude Arabica beans from Colombia and Brazil, creating a cup with natural sweetness, soft acidity, and a velvety mouthfeel. Expect notes of caramel, cocoa, and toasted nuts, supported by a smooth finish that works beautifully both as a straight espresso and in milk-based drinks. Ideal for espresso machines and moka pots, where its rounded profile truly shines.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/espresso-blend-smooth.jpg",
+			"alt": "Medium roasted espresso beans with smooth texture"
+		},
+		"category": "coffee",
+		"tags": [
+			"espresso"
+		],
+		"weight": "250g",
+		"origin": "Colombia & Brazil",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"espresso",
+			"moka pot",
+			"aeropress"
+		]
+	},
+	{
+		"id": "c2",
+		"title": "Dark Espresso",
+		"shortDescription": "Rich, full-bodied espresso with deep chocolate notes.",
+		"longDescription": "Crafted from Brazilian and Guatemalan beans, this dark espresso delivers a bold, full-bodied cup with deep chocolate tones, subtle smokiness, and a lingering velvety finish. Its low acidity and intense aroma make it perfect for espresso lovers who prefer a strong, satisfying shot. Best enjoyed as espresso, ristretto, or in rich milk drinks like cappuccino.",
+		"price": 13.90,
+		"discountedPrice": 13.90,
+		"image": {
+			"url": "images/coffee/espresso-dark-roast-bold.jpg",
+			"alt": "Dark roasted espresso beans with rich texture"
+		},
+		"category": "coffee",
+		"tags": [
+			"espresso",
+			"dark"
+		],
+		"weight": "250g",
+		"origin": "Brazil & Guatemala",
+		"roastLevel": "dark",
+		"brewMethods": [
+			"espresso",
+			"ristretto",
+			"moka pot"
+		]
+	},
+	{
+		"id": "c3",
+		"title": "Golden Roast",
+		"shortDescription": "A smooth, golden roast with balanced flavor and mild sweetness.",
+		"longDescription": "This golden medium roast is made from Ethiopian beans known for their natural sweetness and floral aroma. The cup opens with gentle citrus brightness, followed by a smooth, rounded body and a clean finish. Perfect for pour‑over and drip brewing, where its delicate complexity comes forward without bitterness.",
+		"price": 10.90,
+		"discountedPrice": 10.90,
+		"image": {
+			"url": "images/coffee/golden-ground.jpg",
+			"alt": "Golden roasted coffee grounds"
+		},
+		"category": "coffee",
+		"tags": [
+			"medium"
+		],
+		"weight": "250g",
+		"origin": "Ethiopia",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"pour-over",
+			"drip",
+			"aeropress"
+		]
+	},
+	{
+		"id": "c4",
+		"title": "Medium Ground",
+		"shortDescription": "Classic medium roast coffee with a gentle aroma and smooth finish.",
+		"longDescription": "A dependable everyday medium roast made from Colombian beans, offering a balanced cup with soft nutty notes, mild acidity, and a smooth finish. Its versatile profile makes it ideal for drip machines, French press, and pour‑over brewing. A comforting, familiar cup that suits any time of day.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/medium-roast-classic.jpg",
+			"alt": "Medium ground coffee with balanced texture"
+		},
+		"category": "coffee",
+		"tags": [
+			"medium",
+			"ground"
+		],
+		"weight": "250g",
+		"origin": "Colombia",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"drip",
+			"pour-over",
+			"french press"
+		]
+	},
+	{
+		"id": "c5",
+		"title": "Breakfast Coffee",
+		"shortDescription": "Bright and lively blend perfect for mornings.",
+		"longDescription": "A light and uplifting roast designed to start the day with energy. Made from Kenyan and Ethiopian beans, this blend offers bright acidity, hints of citrus, and a gentle caramel sweetness. Its clean, refreshing finish makes it ideal for morning pour‑overs or drip brews.",
+		"price": 10.90,
+		"discountedPrice": 10.90,
+		"image": {
+			"url": "images/coffee/light-roast-breakfast.jpg",
+			"alt": "Light roasted coffee beans for breakfast blend"
+		},
+		"category": "coffee",
+		"tags": [
+			"light"
+		],
+		"weight": "250g",
+		"origin": "Kenya & Ethiopia",
+		"roastLevel": "light",
+		"brewMethods": [
+			"pour-over",
+			"drip"
+		]
+	},
+	{
+		"id": "c6",
+		"title": "Light Roast Bright",
+		"shortDescription": "A delicate light roast with citrus notes and a clean finish.",
+		"longDescription": "This bright and delicate roast highlights the natural citrus and floral notes of high‑altitude Ethiopian beans. With crisp acidity and a clean finish, it’s perfect for slow brewing methods that emphasize clarity, such as V60 or Chemex.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/light-roast-bright.jpg",
+			"alt": "Light roasted coffee beans with bright tone"
+		},
+		"category": "coffee",
+		"tags": [
+			"light"
+		],
+		"weight": "250g",
+		"origin": "Ethiopia",
+		"roastLevel": "light",
+		"brewMethods": [
+			"pour-over",
+			"chemex",
+			"aeropress"
+		]
+	},
+	{
+		"id": "c7",
+		"title": "Medium Roast Balanced",
+		"shortDescription": "Balanced medium roast with smooth body and subtle nutty aroma.",
+		"longDescription": "A smooth and balanced medium roast crafted from Colombian beans, offering a rounded body, soft nutty aroma, and gentle sweetness. Its approachable flavor profile makes it a great all‑rounder for drip, French press, and pour‑over brewing.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/medium-roast-blend-balanced.jpg",
+			"alt": "Medium roasted coffee beans with balanced blend"
+		},
+		"category": "coffee",
+		"tags": [
+			"medium"
+		],
+		"weight": "250g",
+		"origin": "Colombia",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"drip",
+			"french press",
+			"pour-over"
+		]
+	},
+	{
+		"id": "c8",
+		"title": "Espresso Whole Beans Classic",
+		"shortDescription": "Classic espresso whole beans for a rich and aromatic brew.",
+		"longDescription": "A traditional espresso roast made from Brazilian beans, offering rich aroma, deep sweetness, and a smooth, chocolatey finish. Ideal for espresso machines and moka pots, where its full body and low acidity shine through.",
+		"price": 13.90,
+		"discountedPrice": 13.90,
+		"image": {
+			"url": "images/coffee/espresso-whole-beans-classic.jpg",
+			"alt": "Whole espresso beans with dark roast color"
+		},
+		"category": "coffee",
+		"tags": [
+			"espresso"
+		],
+		"weight": "250g",
+		"origin": "Brazil",
+		"roastLevel": "dark",
+		"brewMethods": [
+			"espresso",
+			"moka pot"
+		]
+	},
+	{
+		"id": "c9",
+		"title": "Ground Espresso",
+		"shortDescription": "Finely ground espresso for a strong, aromatic cup.",
+		"longDescription": "Finely ground Brazilian espresso roast with bold aroma, deep sweetness, and a smooth, lingering finish. Perfect for espresso machines and stovetop brewers, delivering a strong and satisfying cup every time.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/ground-espresso.jpg",
+			"alt": "Ground espresso powder in metal tin"
+		},
+		"category": "coffee",
+		"tags": [
+			"espresso",
+			"ground"
+		],
+		"weight": "250g",
+		"origin": "Brazil",
+		"roastLevel": "dark",
+		"brewMethods": [
+			"espresso",
+			"moka pot"
+		]
+	},
+	{
+		"id": "c10",
+		"title": "Dark Ground",
+		"shortDescription": "Deep, dark ground coffee with intense aroma and bold flavor.",
+		"longDescription": "A bold and intense dark roast made from Guatemalan beans, offering deep chocolate notes, subtle smokiness, and a rich aroma. Ideal for French press and drip brewing, where its full body and depth come forward.",
+		"price": 12.90,
+		"discountedPrice": 12.90,
+		"image": {
+			"url": "images/coffee/dark-ground.jpg",
+			"alt": "Dark ground coffee texture close-up"
+		},
+		"category": "coffee",
+		"tags": [
+			"dark",
+			"ground"
+		],
+		"weight": "250g",
+		"origin": "Guatemala",
+		"roastLevel": "dark",
+		"brewMethods": [
+			"french press",
+			"drip"
+		]
+	},
+	{
+		"id": "c11",
+		"title": "Golden Ground",
+		"shortDescription": "Smooth golden ground coffee with mild acidity and balanced sweetness.",
+		"longDescription": "A smooth and balanced medium roast made from Ethiopian beans, offering gentle acidity, floral aroma, and a clean finish. Perfect for pour‑over and drip brewing, where its subtle sweetness shines.",
+		"price": 10.90,
+		"discountedPrice": 10.90,
+		"image": {
+			"url": "images/coffee/golden-ground.jpg",
+			"alt": "Golden ground coffee close-up"
+		},
+		"category": "coffee",
+		"tags": [
+			"medium",
+			"ground"
+		],
+		"weight": "250g",
+		"origin": "Ethiopia",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"pour-over",
+			"drip"
+		]
+	},
+	{
+		"id": "c12",
+		"title": "Medium Roast Golden",
+		"shortDescription": "A golden-hued medium roast with a soft, nutty finish.",
+		"longDescription": "This golden medium roast blends Colombian and Ethiopian beans for a cup with soft nuttiness, gentle sweetness, and a clean finish. Ideal for pour‑over and drip brewing, where its balanced profile truly shines.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/coffee/medium-roast-golden.jpg",
+			"alt": "Medium roasted coffee beans with golden tone"
+		},
+		"category": "coffee",
+		"tags": [
+			"medium"
+		],
+		"weight": "250g",
+		"origin": "Colombia & Ethiopia",
+		"roastLevel": "medium",
+		"brewMethods": [
+			"pour-over",
+			"drip",
+			"aeropress"
+		]
+	},
+	{
+		"id": "t1",
+		"title": "Willow Green Tea",
+		"shortDescription": "A gentle green tea with fresh, grassy notes.",
+		"longDescription": "A soft and refreshing green tea sourced from the misty hills of Shizuoka, Japan. Expect clean grassy notes, gentle sweetness, and a smooth finish. Best enjoyed as a light, calming brew steeped at lower temperatures to preserve its delicate character.",
+		"price": 11.90,
+		"discountedPrice": 11.90,
+		"image": {
+			"url": "images/tea/willow-green-tea.jpg",
+			"alt": "Loose leaf green tea with soft texture"
+		},
+		"category": "tea",
+		"tags": [
+			"green"
+		],
+		"weight": "50g",
+		"origin": "Japan",
+		"teaType": "green",
+		"form": "loose leaf"
+	},
+	{
+		"id": "t2",
+		"title": "Twilight Oolong",
+		"shortDescription": "Smooth oolong tea with floral undertones.",
+		"longDescription": "A smooth and aromatic oolong from Taiwan, offering floral undertones, gentle roasted aroma, and a naturally sweet finish. Its layered flavor profile develops beautifully over multiple infusions, making it a perfect tea for slow, mindful brewing.",
+		"price": 12.90,
+		"discountedPrice": 12.90,
+		"image": {
+			"url": "images/tea/twilight-oolong.jpg",
+			"alt": "Loose oolong tea leaves with warm tones"
+		},
+		"category": "tea",
+		"tags": [
+			"oolong"
+		],
+		"weight": "50g",
+		"origin": "Taiwan",
+		"teaType": "oolong",
+		"form": "loose leaf"
+	},
+	{
+		"id": "t3",
+		"title": "Orange Blossom Green",
+		"shortDescription": "A bright green tea with soft citrus and floral notes.",
+		"longDescription": "A lively green tea blend from China infused with delicate orange blossom and citrus peel. The result is a refreshing cup with floral sweetness, gentle acidity, and a fragrant aroma. Perfect for afternoon brewing or iced tea.",
+		"price": 14.50,
+		"discountedPrice": 14.50,
+		"image": {
+			"url": "images/tea/orange-blossom-green.jpg",
+			"alt": "Loose leaf green tea with orange peel and petals"
+		},
+		"category": "tea",
+		"tags": [
+			"green",
+			"citrus"
+		],
+		"weight": "50g",
+		"origin": "China",
+		"teaType": "green",
+		"form": "loose leaf"
+	},
+	{
+		"id": "t4",
+		"title": "Pure Matcha",
+		"shortDescription": "Finely ground Japanese matcha with vibrant color.",
+		"longDescription": "A premium ceremonial‑grade matcha from Uji, Japan, known for its vibrant green color, smooth umami flavor, and creamy texture. Perfect for traditional whisking or modern lattes, offering a clean, energizing cup.",
+		"price": 13.90,
+		"discountedPrice": 13.90,
+		"image": {
+			"url": "images/tea/pure-matcha.jpg",
+			"alt": "Bright green matcha powder close-up"
+		},
+		"category": "tea",
+		"tags": [
+			"matcha"
+		],
+		"weight": "50g",
+		"origin": "Japan",
+		"teaType": "matcha",
+		"form": "powder"
+	},
+	{
+		"id": "t5",
+		"title": "Amber Leaf Infusion",
+		"shortDescription": "A warming herbal infusion with notes of spice and dried fruit.",
+		"longDescription": "A comforting herbal infusion combining dried fruit, warm spices, and aromatic leaves. Naturally caffeine‑free, it offers a soothing cup with gentle sweetness and a cozy aroma. Perfect for evening relaxation.",
+		"price": 12.90,
+		"discountedPrice": 12.90,
+		"image": {
+			"url": "images/tea/amber-leaf-infusion.jpg",
+			"alt": "Loose herbal tea blend with amber tones"
+		},
+		"category": "tea",
+		"tags": [
+			"herbal"
+		],
+		"weight": "100g",
+		"origin": "Sri Lanka",
+		"teaType": "herbal",
+		"form": "loose leaf"
+	},
+	{
+		"id": "t6",
+		"title": "Nordic Storage Tins",
+		"shortDescription": "Elegant ceramic tea canisters for keeping blends fresh.",
+		"longDescription": "A set of elegant ceramic storage tins designed to keep tea leaves or coffee grounds fresh and aromatic. Their minimalist Nordic design makes them perfect for kitchen counters or open shelving. Each tin includes an airtight seal to preserve flavor.",
+		"price": 29.90,
+		"discountedPrice": 29.90,
+		"image": {
+			"url": "images/gear/tea-canister-ceramic-gray-2-01.jpg",
+			"alt": "Two gray ceramic tea canisters on wooden surface"
+		},
+		"category": "gear",
+		"tags": [
+			"storage",
+			"tea"
+		]
+	},
+	{
+		"id": "t7",
+		"title": "Midnight Assam",
+		"shortDescription": "Bold black tea with deep malt sweetness.",
+		"longDescription": "A rich and full-bodied Assam black tea harvested from the Brahmaputra Valley. Expect deep malt sweetness, warm honey notes, and a smooth, lingering finish. Perfect for morning brews or as a strong base for milk tea.",
+		"price": 12.90,
+		"discountedPrice": 12.90,
+		"image": {
+			"url": "images/tea/black-tea.jpg",
+			"alt": "Loose leaf black Assam tea"
+		},
+		"category": "tea",
+		"tags": [
+			"black"
+		],
+		"weight": "100g",
+		"origin": "India",
+		"teaType": "black",
+		"form": "loose leaf"
+	},
+	{
+		"id": "g1",
+		"title": "Pour-Over Filter",
+		"shortDescription": "Minimalist pour-over coffee filter for clean brewing.",
+		"longDescription": "A minimalist glass pour‑over filter designed for clean, balanced brewing. Compatible with standard paper cones and ideal for 1–2 cup servings. Its open design enhances aroma and clarity, making it perfect for slow morning rituals.",
+		"price": 13.50,
+		"discountedPrice": 13.50,
+		"image": {
+			"url": "images/gear/pour-over-filter.jpg",
+			"alt": "Glass pour-over coffee filter with paper cone"
+		},
+		"category": "gear",
+		"tags": [
+			"filter",
+			"coffee"
+		]
+	},
+	{
+		"id": "g2",
+		"title": "Tea Canister Ceramic Gray 3-Pack",
+		"shortDescription": "Set of three ceramic canisters for storing tea or coffee.",
+		"longDescription": "A stylish 3‑pack of ceramic canisters designed to store tea, coffee, or dry goods. Each canister includes an airtight bamboo lid to maintain freshness. Their clean Scandinavian look fits perfectly into modern kitchens and open shelving. Ideal for organizing loose leaf tea, coffee beans, or small pantry essentials.",
+		"price": 39.90,
+		"discountedPrice": 39.90,
+		"image": {
+			"url": "images/gear/tea-canister-ceramic-gray-3-01.jpg",
+			"alt": "Three gray ceramic canisters on wooden table"
+		},
+		"category": "gear",
+		"tags": [
+			"storage",
+			"ceramic"
+		]
+	},
+	{
+		"id": "g3",
+		"title": "Tea Strainer Ball",
+		"shortDescription": "Classic stainless steel tea infuser for loose leaf brewing.",
+		"longDescription": "A timeless stainless steel tea infuser designed for effortless loose leaf brewing. The fine mesh allows water to circulate freely while keeping even small leaves contained. Perfect for single‑cup brewing and compatible with most mugs and teapots. A simple, durable essential for any tea lover.",
+		"price": 5.90,
+		"discountedPrice": 5.90,
+		"image": {
+			"url": "images/gear/tea-strainer-ball-01.jpg",
+			"alt": "Metal tea strainer ball resting on glass cup"
+		},
+		"category": "gear",
+		"tags": [
+			"infuser",
+			"tea"
+		]
+	},
+	{
+		"id": "g4",
+		"title": "Matcha Whisk",
+		"shortDescription": "Traditional bamboo whisk for smooth, frothy matcha preparation.",
+		"longDescription": "A handcrafted bamboo matcha whisk (chasen) designed to create a smooth, frothy bowl of matcha. Its fine, flexible prongs aerate the tea beautifully, ensuring a creamy texture and balanced flavor. Ideal for both traditional matcha ceremonies and modern matcha lattes.",
+		"price": 10.90,
+		"discountedPrice": 10.90,
+		"image": {
+			"url": "images/gear/matcha-whisk.jpg",
+			"alt": "Bamboo matcha whisk standing upright"
+		},
+		"category": "gear",
+		"tags": [
+			"matcha",
+			"whisk"
+		]
+	}
+]

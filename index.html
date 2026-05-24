@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home | Roast & Leaf</title>
+	<meta name="description" content="Fine coffee & tea — curated blends, artisan gear, and premium matcha.">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header id="header"></header>
+
+	<h1 class="landing-title">Welcome to Roast & Leaf</h1>
+
+	<section class="hero">
+		<img src="images/new-hero-image.jpg" alt="Roast & Leaf hero image" class="hero-image">
+		<div class="hero-content">
+			<h2 class="hero-line">Premium blends.</h2>
+			<h2 class="hero-line">Timeless taste...</h2>
+			<a href="categories.html" class="btn btn-light hero-cta">Shop Now</a>
+		</div>
+	</section>
+
+	<section class="carousel-section">
+		<h2 class="carousel-title">Recently Viewed</h2>
+		<div class="carousel-container">
+			<button class="carousel-btn left"></button>
+			<div class="carousel-track" id="carousel-track"></div>
+			<button class="carousel-btn right"></button>
+		</div>
+		<div class="carousel-dots" id="carousel-dots"></div>
+	</section>
+
+	<section class="full product-section">
+		<div class="container">
+			<div class="inner">
+				<h2 class="section-title">Bestsellers</h2>
+				<div class="product-grid" id="product-list"></div>
+			</div>
+		</div>
+	</section>
+
+	<div id="footer"></div>
+
+	<script type="module" src="js/utils/main.js"></script>
+	<script type="module" src="js/pages/index.js"></script>
+
+</body>
+
+</html>

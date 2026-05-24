@@ -1,0 +1,122 @@
+.search-bar {
+	display: none;
+	position: absolute;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 620px;
+	background: var(--color-bg);
+	padding: 0.4rem 0.7rem;
+	border: 1px solid var(--color-border);
+	border-radius: 8px;
+	box-shadow: none !important;
+	z-index: 100;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45rem;
+}
+
+.search-bar.active {
+	display: flex;
+}
+
+.search-bar input {
+	flex: 1;
+	max-width: 420px;
+	padding: 0.35rem 0.65rem;
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+	font-size: 1rem;
+	font-family: "Open Sans", sans-serif;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar input:focus {
+	outline: none;
+	border-color: var(--color-accent);
+	box-shadow: 0 0 0 2px rgba(212, 178, 106, 0.25);
+}
+
+.search-button {
+	background: var(--color-accent);
+	border: none;
+	padding: 0.35rem 0.6rem;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-bg);
+	font-size: 1rem;
+	transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.search-button:hover {
+	background: var(--color-accent-hover);
+	transform: scale(1.05);
+}
+
+.search-button:active {
+	transform: scale(0.97);
+}
+
+.search-close {
+	background: none;
+	border: none;
+	font-size: 1.1rem;
+	color: var(--color-text);
+	cursor: pointer;
+	opacity: 0.7;
+	margin-left: 0.25rem;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.search-close:hover {
+	opacity: 1;
+	transform: scale(1.15);
+}
+
+.search-results {
+	margin-top: 1rem;
+	border-top: none !important;
+}
+
+.search-results div {
+	padding: 0.8rem 0.6rem;
+	border-bottom: 1px solid var(--color-border);
+	cursor: pointer;
+	font-size: 0.95rem;
+	color: var(--color-text);
+	transition: background 0.2s ease;
+}
+
+.search-results div:hover {
+	background: rgba(212, 178, 106, 0.15);
+}
+
+#searchResults {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #F5F0E8;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-6px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,248 @@
+/* --- Carousel Section --- */
+.carousel-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3rem auto;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* --- Carousel Container --- */
+.carousel-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 600px;
+	border-radius: 12px;
+	background-color: transparent;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: none;
+}
+
+/* --- Carousel Track --- */
+.carousel-track {
+	display: flex;
+	transition: transform 0.4s ease;
+	width: 100%;
+}
+
+/* --- Carousel Item --- */
+.carousel-item {
+	flex: 0 0 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+/* --- Carousel Card --- */
+.carousel-card {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	width: 100%;
+	max-width: 500px;
+	padding: 1.5rem;
+	border-radius: 12px;
+	background-color: var(--color-bg);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+	text-decoration: none;
+	color: var(--color-text);
+	transform: scale(1);
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carousel-card,
+.carousel-card * {
+	text-decoration: none;
+}
+
+.carousel-card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	border: none;
+}
+
+.carousel-card,
+.carousel-card:hover,
+.carousel-card *:hover {
+	text-decoration: none;
+}
+
+
+/* --- Product Image --- */
+.carousel-image {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 50%;
+	flex-shrink: 0;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.4s ease;
+}
+
+.carousel-card:hover .carousel-image {
+	transform: scale(1.05);
+}
+
+/* --- Product Info --- */
+.carousel-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.4rem;
+	text-align: left;
+}
+
+.carousel-description {
+	font-size: 0.9rem;
+	color: var(--color-text-light);
+	line-height: 1.4;
+}
+
+.carousel-price {
+	font-weight: 600;
+	color: var(--color-bg-dark);
+	margin-top: 0.3rem;
+}
+
+/* --- Buy Now Button --- */
+.carousel-buy {
+	align-self: flex-start;
+	background-color: var(--color-bg-dark);
+	color: var(--color-cta-text);
+	padding: var(--space-3) var(--space-5);
+	border: 2px solid transparent;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.carousel-buy:hover {
+	background-color: var(--color-bg);
+	color: var(--color-bg-dark);
+	border-color: var(--color-accent);
+	transform: translateY(-1px);
+}
+
+/* --- Carousel Buttons --- */
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: var(--color-bg-dark);
+	color: var(--color-cta-text);
+	border: 2px solid transparent;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+}
+
+.carousel-btn:hover {
+	background-color: var(--color-bg);
+	color: var(--color-bg-dark);
+	border-color: var(--color-accent);
+	transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-btn.left {
+	left: 3rem;
+}
+
+.carousel-btn.right {
+	right: 3rem;
+}
+
+.carousel-btn::before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: solid currentColor;
+	border-width: 0 2px 2px 0;
+}
+
+.carousel-btn.left::before {
+	transform: rotate(135deg);
+}
+
+.carousel-btn.right::before {
+	transform: rotate(-45deg);
+}
+
+/* --- Carousel Dots --- */
+.carousel-dots {
+	position: absolute;
+	bottom: 0rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 6px;
+}
+
+.carousel-dots button {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(43, 31, 23, 0.3);
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.carousel-dots button.active {
+	background-color: var(--color-accent);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+	.carousel-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.carousel-info {
+		align-items: center;
+	}
+
+	.carousel-buy {
+		align-self: center;
+	}
+}
+
+/* --- Desktop --- */
+@media (min-width: 1024px) {
+	.carousel-section {
+		max-width: 1000px;
+	}
+
+	.carousel-container {
+		max-width: 850px;
+	}
+
+	.carousel-card {
+		max-width: 650px;
+	}
+
+	.carousel-buy {
+		margin-left: auto;
+	}
+}

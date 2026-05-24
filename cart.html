@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping Cart | Roast & Leaf</title>
+	<meta name="description" content="View and manage your shopping cart at Roast & Leaf.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+	<header id="header"></header>
+
+	<div class="breadcrumbs-container">
+		<nav class="breadcrumbs">
+			<a href="index.html">Home</a>
+			<span class="divider">/</span>
+			<span class="current">Cart</span>
+		</nav>
+	</div>
+
+	<div class="container">
+		<h1 class="cart-title">Shopping cart</h1>
+
+		<section class="cart-container">
+			<div id="cart-items" class="cart-items"></div>
+
+			<div class="cart-summary">
+				<p class="cart-total-label">Total</p>
+				<p class="cart-total" id="cart-total">€ 0.00</p>
+				<button id="checkout-btn" class="checkout-btn">Check Out</button>
+			</div>
+		</section>
+	</div>
+
+	<section class="related-gear">
+		<h2 class="gear-heading">Need gear?</h2>
+		<div id="gear-grid" class="gear-grid"></div>
+	</section>
+
+	<div id="footer"></div>
+
+	<script type="module" src="js/utils/main.js"></script>
+	<script type="module" src="js/pages/cartPage.js"></script>
+</body>
+
+</html>

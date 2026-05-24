@@ -1,0 +1,161 @@
+/* --- Footer wrapper --- */
+.site-footer {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	padding: 2rem 1.5rem;
+	font-family: "Inter", sans-serif;
+	width: 100%;
+}
+
+/* --- Mobile footer sections --- */
+.footer-mobile .footer-section {
+	border-bottom: 1px solid var(--color-border);
+	padding: 1rem 0;
+}
+
+.footer-mobile .footer-toggle {
+	width: 100%;
+	background: none;
+	border: none;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: var(--color-text);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.footer-mobile .arrow {
+	border: var(--color-text);
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 4px;
+	transform: rotate(-45deg);
+	transition: transform 0.3s ease;
+}
+
+.footer-mobile .footer-section.open .arrow {
+	transform: rotate(45deg);
+}
+
+.footer-mobile .footer-content {
+	display: none;
+	margin-top: 0.8rem;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.footer-mobile .footer-section.open .footer-content {
+	display: flex;
+}
+
+.footer-mobile .footer-content a {
+	color: var(--color-text);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.footer-mobile .footer-content a:hover {
+	text-decoration: underline;
+}
+
+/* --- Desktop footer hidden on mobile --- */
+.footer-desktop {
+	display: none;
+}
+
+/* --- Copyright --- */
+.copyright {
+	margin-top: 2rem;
+	font-size: 0.9rem;
+	text-align: center;
+	display: block;
+}
+
+/* --- Tablet --- */
+@media (min-width: 600px) {
+	.site-footer {
+		padding: 2.5rem 2rem;
+	}
+
+	.footer-mobile .footer-toggle {
+		font-size: 1.2rem;
+	}
+
+	.footer-mobile .footer-content a {
+		font-size: 1rem;
+	}
+}
+
+/* --- Desktop --- */
+@media (min-width: 1024px) {
+	.site-footer {
+		padding: 6rem 1.5rem 1rem;
+	}
+
+	.footer-mobile {
+		display: none;
+	}
+
+	.site-footer .container {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 var(--space-3);
+	}
+
+	.footer-desktop {
+		grid-column: 3 / 11;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4rem;
+		text-align: center;
+	}
+
+	.footer-col h3 {
+		font-family: "Playfair Display", serif;
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		color: var(--color-text);
+		margin-bottom: 1.4rem;
+	}
+
+	.footer-col a {
+		display: block;
+		margin-bottom: 0.6rem;
+		font-size: 0.95rem;
+		font-weight: 500;
+		color: var(--color-text);
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+
+	.footer-col a:hover {
+		text-decoration: underline;
+	}
+
+	.footer-col {
+		position: relative;
+	}
+
+	.footer-col:not(:last-child)::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -2rem;
+		height: 100%;
+		width: 1px;
+		background-color: var(--color-border);
+	}
+
+	.copyright {
+		grid-column: 3 / 11;
+		margin-top: 3rem;
+		text-align: center;
+		font-size: 0.9rem;
+		opacity: 0.85;
+	}
+}

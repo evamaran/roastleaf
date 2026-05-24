@@ -1,0 +1,61 @@
+<header class="site-header">
+	<div class="container">
+		<div class="inner flex-between">
+
+			<a href="index.html" class="header-logo">
+				<img src="images/logo.png" alt="Roast & Leaf logo">
+			</a>
+
+			<nav class="desktop-nav">
+				<a href="coffee.html">Coffee</a>
+				<a href="tea.html">Tea</a>
+				<a href="gear.html">Gear</a>
+			</nav>
+
+			<div class="header-icons">
+
+				<button id="searchToggle" class="header-icon-btn">
+					<i class="fa-solid fa-magnifying-glass header-icon"></i>
+				</button>
+
+				<!-- UPDATED: profile link is now a button -->
+				<button id="profile-icon" class="header-icon-btn">
+					<i class="fa-solid fa-user header-icon"></i>
+				</button>
+
+				<a href="cart.html" class="header-icon-btn cart-wrapper">
+					<i class="fa-solid fa-cart-shopping header-icon"></i>
+					<span id="cart-count" class="cart-count">0</span>
+				</a>
+
+			</div>
+
+			<div id="menuToggle" class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+
+		</div>
+	</div>
+
+	<nav class="mobile-nav">
+		<a href="coffee.html">Coffee</a>
+		<a href="tea.html">Tea</a>
+		<a href="gear.html">Gear</a>
+		<a href="about.html">About Us</a>
+
+		<!-- UPDATED: mobile profile link is now a button -->
+		<button id="profile-link-mobile" class="mobile-nav-btn">My Profile</button>
+
+		<a href="cart.html">Cart</a>
+	</nav>
+
+</header>
+
+<div id="searchBar" class="search-bar">
+	<input type="text" id="searchInput" placeholder="Search products...">
+	<button id="searchBtn" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+	<button id="searchClose" class="search-close"><i class="fa-solid fa-xmark"></i></button>
+	<div id="searchResults" class="search-results"></div>
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Checkout | Roast & Leaf</title>
+	<meta name="description" content="Fine coffee & tea — curated blends, artisan gear, and premium matcha.">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a87332500a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header id="header"></header>
+
+	<header>
+		<h1>Checkout</h1>
+	</header>
+
+	<main class="checkout-container">
+
+		<section class="checkout-section delivery">
+			<h2>Delivery</h2>
+
+			<form id="checkout-form">
+
+				<input id="firstName" type="text" placeholder="First name" required />
+				<input id="lastName" type="text" placeholder="Last name" required />
+				<input id="address" type="text" placeholder="Street address" required />
+				<input id="city" type="text" placeholder="City" required />
+
+				<div class="form-row">
+					<input id="postalCode" type="text" placeholder="Postal code" required />
+					<input id="countryCode" type="text" placeholder="Country code" required />
+				</div>
+
+				<input id="phone" type="text" placeholder="Phone number" required />
+
+			</form>
+		</section>
+
+		<section class="checkout-section payment">
+			<h2>Payment</h2>
+
+			<div class="payment-methods">
+
+				<label class="payment-option">
+					<input type="radio" name="payment" value="card" checked />
+					<span>Credit card</span>
+				</label>
+
+				<div class="payment-content" data-method="card">
+					<input type="text" placeholder="Cardholder name" required />
+					<input type="text" placeholder="Card number" required />
+
+					<div class="form-row">
+						<input type="text" placeholder="Expiry date (MM/YY)" required />
+						<input type="text" placeholder="CVV" required />
+					</div>
+				</div>
+
+				<label class="payment-option">
+					<input type="radio" name="payment" value="paypal" />
+					<span>PayPal</span>
+				</label>
+
+				<div class="payment-content" data-method="paypal">
+					<p>You'll be redirected to PayPal to complete your purchase.</p>
+				</div>
+
+				<label class="payment-option">
+					<input type="radio" name="payment" value="apple" />
+					<span>Apple Pay</span>
+				</label>
+
+				<div class="payment-content" data-method="apple">
+					<p>Use Apple Pay on your device to complete the payment.</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="checkout-section summary">
+			<h2>Order Summary</h2>
+
+			<button id="pay-now" class="btn">Pay Now</button>
+		</section>
+
+	</main>
+
+	<div id="footer"></div>
+
+	<div id="toast" class="toast">Payment successful!</div>
+
+	<script type="module" src="js/utils/main.js"></script>
+	<script type="module" src="js/pages/checkoutPage.js"></script>
+
+</body>
+
+</html>

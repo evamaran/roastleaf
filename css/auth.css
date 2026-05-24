@@ -1,0 +1,219 @@
+/* --- Containers --- */
+.auth-container,
+.profile-container {
+	max-width: 420px;
+	margin: 2rem auto;
+	padding: 1.5rem;
+	background: var(--color-bg);
+	border-radius: 12px;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Headings --- */
+.auth-container h1,
+.profile-container h1 {
+	text-align: center;
+}
+
+/* --- Form labels --- */
+form label {
+	display: block;
+	margin-top: 1rem;
+}
+
+/* --- Form fields --- */
+form input,
+form select,
+textarea {
+	width: 100%;
+	padding: 0.75rem;
+	margin-top: 0.4rem;
+	border: 1px solid #d4c2a3;
+	border-radius: 8px;
+	background: #faf8f3;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input::placeholder,
+form select::placeholder,
+textarea::placeholder {
+	color: #a38b6d;
+}
+
+form input:focus,
+form select:focus,
+textarea:focus {
+	outline: none;
+	border-color: var(--color-bg-dark);
+	box-shadow: 0 0 0 3px rgba(122, 75, 46, 0.15);
+	background: #fff;
+}
+
+/* --- Postal + City layout --- */
+.postal-city {
+	display: flex;
+	gap: 0.8rem;
+	margin-top: 1rem;
+}
+
+.postal-city>div {
+	flex: 1;
+}
+
+.postal-city>div:first-child {
+	flex: 0 0 120px;
+}
+
+.postal-city>div:first-child input {
+	max-width: 120px;
+}
+
+.postal-city>div:last-child input {
+	width: 100%;
+}
+
+/* --- Phone layout --- */
+.phone-group {
+	display: flex;
+	gap: 0.8rem;
+	margin-top: 1rem;
+}
+
+.phone-group>div {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+.phone-group label {
+	width: auto;
+}
+
+.phone-group>div:first-child {
+	flex: 0 0 120px;
+}
+
+.phone-group>div:first-child select {
+	width: 100%;
+}
+
+.phone-group>div:last-child {
+	flex: 1;
+}
+
+.phone-group>div:last-child input {
+	width: 100%;
+}
+
+/* --- Buttons layout --- */
+.profile-buttons {
+	display: flex;
+	gap: 0.8rem;
+	margin-top: 1.5rem;
+	justify-content: space-between;
+}
+
+.profile-buttons .btn--auth,
+.profile-buttons .btn--logout {
+	flex: 1;
+	padding: var(--space-3) var(--space-5);
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	min-height: 48px;
+	border: 2px solid transparent;
+}
+
+/* Save Changes hover */
+.profile-buttons .btn--auth:hover {
+	border-color: var(--color-accent);
+}
+
+/* Log Out style */
+.profile-buttons .btn--logout {
+	background-color: #E8DCC8;
+	color: var(--color-bg-dark);
+}
+
+.profile-buttons .btn--logout:hover {
+	background-color: var(--color-bg-dark);
+	color: var(--color-cta-text);
+	border-color: var(--color-accent);
+}
+
+/* Shop button layout */
+.btn--shop {
+	width: 100%;
+	margin-top: 1rem;
+	padding: 0.9rem;
+	border-radius: 8px;
+	font-size: 1.05rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* --- Messages --- */
+.auth-message,
+.profile-message {
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 0.95rem;
+}
+
+/* --- Readonly fields --- */
+.profile-container input[readonly] {
+	background: #f0f0f0;
+	cursor: not-allowed;
+}
+
+/* --- Easter Egg Badge --- */
+.easter-egg {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2rem 1rem;
+	gap: 6px;
+}
+
+.easter-egg .egg-text {
+	opacity: 0;
+	font-size: 0.7rem;
+	color: var(--color-bg-dark);
+	transition: opacity 0.25s ease;
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.easter-egg:hover .egg-text {
+	opacity: 1;
+}
+
+.easter-egg .flame {
+	font-size: 1.2rem;
+	transition: transform 0.25s ease;
+}
+
+.easter-egg:hover .flame {
+	transform: scale(1.25) rotate(8deg);
+}
+
+/* --- Desktop --- */
+@media (min-width: 1024px) {
+
+	.auth-container,
+	.profile-container {
+		max-width: 500px;
+	}
+
+	.profile-container h1 {
+		text-align: center;
+	}
+
+	.profile-container input[readonly] {
+		background: var(--color-bg);
+		color: var(--color-text-light);
+	}
+
+	.easter-egg {
+		bottom: 16px;
+		right: 16px;
+	}
+}
