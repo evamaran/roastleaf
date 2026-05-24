@@ -46,8 +46,8 @@ header#header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 0.8rem;
-	margin-right: 0.3rem;
+	gap: 1.2rem;
+	margin-right: 1.2rem;
 	transition: all 0.25s ease;
 }
 
@@ -124,6 +124,7 @@ header#header {
 	align-items: center;
 	gap: 6px;
 	cursor: pointer;
+	margin-left: 0.5rem;
 }
 
 .hamburger .bar {
@@ -133,6 +134,7 @@ header#header {
 	transition: all 0.3s ease;
 }
 
+/* --- Mobile nav --- */
 .mobile-nav {
 	display: none;
 	flex-direction: column;
@@ -160,6 +162,26 @@ header#header {
 	font-size: 1.125rem;
 	text-decoration: none;
 	padding: var(--space-2) 0;
+	display: block;
+	width: 100%;
+}
+
+/* --- My Profile button (mobile + tablet) --- */
+.mobile-nav-btn {
+	background: none;
+	border: none;
+	color: var(--color-bg);
+	font-size: 1.125rem;
+	text-align: left;
+	padding: var(--space-2) 0;
+	width: 100%;
+	cursor: pointer;
+	font-family: inherit;
+	display: block;
+}
+
+.mobile-nav-btn:hover {
+	opacity: 0.8;
 }
 
 /* --- Tablet --- */
@@ -173,13 +195,14 @@ header#header {
 	}
 
 	.header-icons {
-		gap: 1rem;
-		margin-right: 0.5rem;
+		gap: 1.4rem;
+		margin-right: 1.4rem;
 	}
 
 	.hamburger {
 		width: 40px;
 		height: 40px;
+		margin-left: 0.8rem;
 	}
 
 	.hamburger .bar {
