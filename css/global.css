@@ -1,9 +1,11 @@
+/* --- Reset --- */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* --- Base HTML --- */
 html {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
@@ -23,6 +25,7 @@ body {
 	transition: none;
 }
 
+/* --- Theme variables --- */
 :root {
 	--color-bg: #F4EDE2;
 	--color-bg-dark: #2B1F17;
@@ -32,6 +35,7 @@ body {
 	--color-border: #D8CFC7;
 	--color-accent: #4A6B3C;
 	--color-cta-text: #F4EDE2;
+
 	--space-1: 0.25rem;
 	--space-2: 0.5rem;
 	--space-3: 0.75rem;
@@ -40,13 +44,16 @@ body {
 	--space-6: 2rem;
 	--space-7: 3rem;
 	--space-8: 4rem;
+
 	--fs-body: 1rem;
 	--fs-h3: 1.25rem;
 	--fs-h2: 1.5rem;
 	--fs-h1: 2rem;
+
 	--max-width: 1200px;
 }
 
+/* --- Typography --- */
 h1,
 h2,
 h3,
@@ -100,10 +107,9 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* --- Titles --- */
 .landing-title {
-	text-shadow:
-		0 0 6px rgba(90, 62, 43, 0.35),
-		0 0 12px rgba(90, 62, 43, 0.25);
+	text-shadow: 0 0 6px rgba(90, 62, 43, 0.35), 0 0 12px rgba(90, 62, 43, 0.25);
 	font-family: "Playfair Display", serif;
 	font-size: 1.8rem;
 	text-align: center;
@@ -117,6 +123,7 @@ a:hover {
 	margin: 3rem 0 2rem;
 }
 
+/* --- Breadcrumbs layout --- */
 .breadcrumbs-container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -125,6 +132,7 @@ a:hover {
 	margin: 0 auto;
 }
 
+/* --- Breadcrumbs (mobile-first with truncation) --- */
 .breadcrumbs {
 	font-family: "Open Sans", sans-serif;
 	font-size: 0.9rem;
@@ -134,6 +142,11 @@ a:hover {
 	gap: 0.3rem;
 	padding: 1rem 0;
 	grid-column: 3 / 11;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
 }
 
 .breadcrumbs a {
@@ -181,21 +194,17 @@ a:hover {
 	transform: translateY(-1px);
 }
 
-/* --- Light button (hero CTA) --- */
 .btn-light {
 	background-color: var(--color-cta-text);
 	color: var(--color-bg-dark);
-	text-decoration: none;
 }
 
 .btn-light:hover {
 	background-color: #E8CFA9;
 	color: var(--color-bg-dark);
 	border-color: var(--color-accent);
-	text-decoration: none;
 }
 
-/* --- Logout button --- */
 .btn--logout {
 	background-color: #D8CFC7;
 	color: var(--color-bg-dark);
@@ -206,7 +215,7 @@ a:hover {
 	border-color: var(--color-accent);
 }
 
-/* --- Arrow --- */
+/* --- Icons --- */
 .arrow {
 	border: solid var(--color-text);
 	border-width: 0 2px 2px 0;
@@ -216,6 +225,7 @@ a:hover {
 	transition: transform 0.3s ease;
 }
 
+/* --- Toast --- */
 .toast {
 	position: fixed;
 	bottom: var(--space-5);
@@ -254,6 +264,7 @@ a:hover {
 	transform: translateY(0);
 }
 
+/* --- Containers --- */
 .container {
 	max-width: var(--max-width);
 	margin: 0 auto;
@@ -266,6 +277,7 @@ a:hover {
 	padding: var(--space-5);
 }
 
+/* --- Utility --- */
 .flex {
 	display: flex;
 	align-items: center;
@@ -280,6 +292,7 @@ a:hover {
 .hidden {
 	display: none !important;
 }
+
 /* --- Tablet layout --- */
 @media (min-width: 600px) {
 	h1 {
@@ -316,6 +329,7 @@ a:hover {
 		padding: 1.5rem 0;
 	}
 }
+
 /* --- Desktop layout --- */
 @media (min-width: 1024px) {
 	h1 {
